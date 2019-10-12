@@ -56,6 +56,7 @@
 
 <script>
 const version = require("../../../package.json").version;
+const API_BASE = ''
 
 export default {
   name: "Login",

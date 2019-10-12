@@ -47,6 +47,7 @@
 import { constantRouterMap } from "../../router/index";
 import { resolveRouter } from "./helper";
 
+const API_BASE = ''
 export default {
   name: "Navbar",
   data() {
@@ -96,7 +97,6 @@ export default {
     }
   },
   created() {
-    let that = this;
     this.$axios
       .get(API_BASE + "/v2/userinfo")
       .then(res => {
